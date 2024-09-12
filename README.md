@@ -108,26 +108,6 @@ p.s. пояснение относительно header с названием п
 ![image](https://github.com/user-attachments/assets/f888b5bd-274a-4a26-8466-3e9a04997282)
 ![image](https://github.com/user-attachments/assets/903e8d43-3382-40a6-bfc1-18d90226edbe)
 
-
-
-
-
-
-
-
-Демонстрация приложения в формате скриншотов:
-
-При обычном размере экрана:
-![image](https://github.com/user-attachments/assets/4815095f-cd42-43b3-8f24-6310424bfa91)
-![image](https://github.com/user-attachments/assets/d6cebbdb-1f7b-479e-b433-1a757ef46e3e)
-![image](https://github.com/user-attachments/assets/acbe6b7c-a3af-4e14-b67a-ea784a64ce20)
-![image](https://github.com/user-attachments/assets/46e30575-a2ea-4812-8157-acddc387b872)
-
-При размере экрана телефона в портретной и альбомной ориентациях:
-![image](https://github.com/user-attachments/assets/bb6427ac-2ecb-4641-a1ba-f68979fc36d0)
-![image](https://github.com/user-attachments/assets/bce71a34-42d8-4e6b-a9fc-e0ba9cbc9978)
-![image](https://github.com/user-attachments/assets/770480aa-412a-4212-995b-4ecc74e35f23)
-
 ---
 Бекенд:
 ![trim-directus](https://github.com/user-attachments/assets/7dbd58a9-9e46-4846-8386-8fcbe0704dc1)

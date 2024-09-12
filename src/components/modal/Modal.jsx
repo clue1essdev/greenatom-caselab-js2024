@@ -10,7 +10,6 @@ const Modal = observer(() => {
     changeModalState,
     incrementIndex,
     decrementIndex,
-    getImageSides,
   } = ImagesStore;
   const leftArrow = index ? (
     <button className="arrow-left-btn" onClick={decrementIndex}>
@@ -37,32 +36,8 @@ const Modal = observer(() => {
           <div className="overlay"></div>
           <div
             className="modal-content"
-            style={{
-              height:
-                getImageSides(
-                  `http://localhost:8055/assets/${images[index].image}`
-                ).height +
-                50 +
-                "px",
-              width:
-                getImageSides(
-                  `http://localhost:8055/assets/${images[index].image}`
-                ).width +
-                20 +
-                "px",
-            }}
           >
             <img
-              style={{
-                height:
-                  getImageSides(
-                    `http://localhost:8055/assets/${images[index].image}`
-                  ).height + "px",
-                width:
-                  getImageSides(
-                    `http://localhost:8055/assets/${images[index].image}`
-                  ).width + "px",
-              }}
               className="modal-img"
               src={`http://localhost:8055/assets/${images[index].image}`}
               alt={`Изображение ${images[index].Name}`}
