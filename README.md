@@ -9,7 +9,7 @@
 2. **Запустите фронтенд- и бекенд-часть приложения**
    
 ---
-## UPD ВАЖНО: node-модули на гитхаб репозиторий не запушились (или запушились и были удалены), поэтому перед выполнением следующих инструкций необходимо:
+## Перед выполнением следующих инструкций необходимо поднянуть зависимости проекта, для этого:
 
  1) В `корневой папке` проекта запустить команду `npm install` (она подтянет все необходимые зависимости, основываясь на инструкциях, содержащихся в файле package.json.)
 
@@ -29,13 +29,6 @@
    
    бек-часть: по `http://localhost:8055`
 
-   ВАЖНО: В принципе все зависимости после их установки (инструкция выше) находятся внутри проекта 
-   (поэтому он весит больше 0.5гб, я не разобрался, как это пофиксить,
-   но основновная часть (порядка 0.4гб) - это directus), поэтому, полагаю, запустить на локальной машине будет возможно.
-   
-   Однако я не уверен в этом до конца, поскольку на контейнеризацию проекта не хватило времени, запуск не гарантирован.
-   Прошу обратить большее внимание на демонстрацию работы проекта в скриншотах и гифках, расположенных ниже.
-
 3. **Доступ к админке бекенда**
 
    Логин: `admin@admin.com`
@@ -46,7 +39,7 @@
 
 ## Решение
 
-Стек который использовался:
+Стек, который использовался:
 
 - Фреймворк `React`
 - package manager `vite`
@@ -64,7 +57,7 @@
 6.  тестирование работы шаблонов на пробных изображениях
 7.  создание директории бекенда directus внутри директории проекта
 8.  написание бекенд-части обработки запросов с фронтенда (файл index.js в директории stores/directusCl) с помощью @directus/sdk
-9.  написание клиентской части для отправки запросов на сервер (requestHandler.js c @directus/sdk) и файла для работи с mobx (файл images-store.js), в котором также содержится функция для подбора размеров модального окна для разных размеров изображений, получаемых с сервера, и разных размеров окон, на которых отрисовывается приложение
+9.  написание клиентской части для отправки запросов на сервер (requestHandler.js c @directus/sdk) и файла для работи с mobx (файл images-store.js)
 10. создание коллекции файлов на бекенд части, загрузка файлов в коллекцию, отрисовка файлов с сервера в react-компонентах
 11. финальный дебаггинг (на который почти не осталось времени)
 
@@ -91,26 +84,32 @@ p.s. пояснение относительно header с названием п
 ## Демонстрация работы
 Демонстрация приложения в формате скриншотов:
 
-При обычном размере экрана:
-![image](https://github.com/user-attachments/assets/4815095f-cd42-43b3-8f24-6310424bfa91)
-![image](https://github.com/user-attachments/assets/d6cebbdb-1f7b-479e-b433-1a757ef46e3e)
-![image](https://github.com/user-attachments/assets/acbe6b7c-a3af-4e14-b67a-ea784a64ce20)
-![image](https://github.com/user-attachments/assets/46e30575-a2ea-4812-8157-acddc387b872)
+При открытии сайта с компьютера (соотношение сторон экрана 16:9)
+![image](https://github.com/user-attachments/assets/caee2e05-70a0-4253-8dd6-a7b9ae0d3a00)
+![image](https://github.com/user-attachments/assets/35e5f986-2cf4-42f9-be60-5ef2a63f6cc5)
+![image](https://github.com/user-attachments/assets/fa67b589-8a2c-4629-8909-46f9c6fdc2e7)
+![image](https://github.com/user-attachments/assets/c3a65b33-8b26-467e-911c-2408b5aea661)
+![image](https://github.com/user-attachments/assets/7b5976d0-4c41-4ee8-9dc9-d37c816ef6c5)
+
+
+
+
+
 
 При размере экрана телефона в портретной и альбомной ориентациях:
-![image](https://github.com/user-attachments/assets/bb6427ac-2ecb-4641-a1ba-f68979fc36d0)
-![image](https://github.com/user-attachments/assets/bce71a34-42d8-4e6b-a9fc-e0ba9cbc9978)
-![image](https://github.com/user-attachments/assets/770480aa-412a-4212-995b-4ecc74e35f23)
+![image](https://github.com/user-attachments/assets/18687efc-b0cd-439e-900c-faef23ac6b37)
+![image](https://github.com/user-attachments/assets/02473d86-ef58-4fac-a591-0055c6e734b6)
+![image](https://github.com/user-attachments/assets/ac3848a0-cb38-4425-968c-01bab7e02dc3)
+![image](https://github.com/user-attachments/assets/f888b5bd-274a-4a26-8466-3e9a04997282)
+![image](https://github.com/user-attachments/assets/903e8d43-3382-40a6-bfc1-18d90226edbe)
+
+
+
+
+
+
 
 
 ---
-Демонстрация работы приложения в формате gif:
-
-Демонстрация работы приложения при обычном размере экрана:
-![main](https://github.com/user-attachments/assets/af675386-4287-4a58-992b-12d13822f0f8)
-
-Демонстрации работы приложения при размере экрана телефона в портретной и альбомной ориентациях:
-![mobile - Trim](https://github.com/user-attachments/assets/da6bfa5e-15e0-4ded-8b96-b8265560784b)
-
 Бекенд:
 ![trim-directus](https://github.com/user-attachments/assets/7dbd58a9-9e46-4846-8386-8fcbe0704dc1)
